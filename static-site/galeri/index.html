@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; }
+        a { text-decoration: none; }
+        .container { padding: 40px; }
+    </style>
+</head>
+<body>
+
+    <header style="background: #1e293b; padding: 25px; text-align: center;">
+        <h2 style="color: white; margin: 0 0 20px 0;">My Website</h2>
+        <nav style="display: flex; justify-content: center; align-items: center; gap: 40px;">
+            <a href="/" style="color: white; font-weight: normal;">Home</a>
+            <a href="/biodata" style="color: white; font-weight: normal;">Data Diri</a>
+            <a href="/galeri" style="color: #38bdf8; font-weight: bold;">Galeri Foto</a>
+        </nav>
+    </header>
+
+    <div class="container" style="max-width: 1400px;">
+        <h1>Galeri Foto</h1>
+        <p>Berikut adalah kumpulan foto saya.</p>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; width: 100%; margin-top: 35px;">
+            <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                <img src="/Images/foto1.jpg" alt="Foto Galeri" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                <img src="/Images/foto2.jpg" alt="Foto Galeri" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                <img src="/Images/foto3.jpg" alt="Foto Galeri" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                <img src="/Images/foto4.jpg" alt="Foto Galeri" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
