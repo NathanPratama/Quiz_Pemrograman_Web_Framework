@@ -1,0 +1,10 @@
+# Netlify cannot run PHP, so the Laravel Blade pages are served as static HTML.
+# The pages live in static-site/; images, favicon and robots.txt come from public/.
+[build]
+  command = "rm -rf dist && mkdir -p dist && cp -r static-site/. dist/ && cp -r public/Images dist/Images && rm -f dist/Images/desktop.ini && cp public/favicon.ico public/robots.txt dist/"
+  publish = "dist"
+
+[[redirects]]
+  from = "/images/*"
+  to = "/Images/:splat"
+  status = 200
